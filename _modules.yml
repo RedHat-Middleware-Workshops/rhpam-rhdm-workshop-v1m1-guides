@@ -1,0 +1,20 @@
+config:
+    renderer: markdown
+
+modules:
+  intro:
+    name: Introduction
+  use-case-overview:
+    name: Use Case Introduction
+  components-overview:
+    name: Understanding the components and installation methods
+  cloud-installation:
+    name: Cloud installation
+  cloud-installation-continued:
+    name: Cloud installation continued
+  verifying-installation:
+    name: Verifying the installation
+  authentication-authorization:
+    name: Security of the platform console
+  finish:
+    name: Conclusion
