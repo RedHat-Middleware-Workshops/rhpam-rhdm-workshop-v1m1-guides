@@ -56,7 +56,7 @@ What kind of environment is right for your you depends on your requirements:
 
 For example, if you want an environment to author rules and processes, you can use the `rhpam70-authoring.yaml` that contains all the components necessary to do so. See the image below.
 
-<img src="../../assets/middleware/rhpam-7-workshop/rhpam70-authoring.png" width="600" />
+![RHPAM 70 Authoring]({% image_path rhpam70-authoring.png %}){:width="600px"}
 
 -----------
 
@@ -65,4 +65,4 @@ Quiz: From the previous step what components do you recognize in this template?
 -----------
 In the case of this workshop, because you need a complete authoring environment with a process server where you can test your assets, we could (or should) deploy the authoring environment. However due to the restrictions of this environment (the Katacoda platform does not provide persistent storage), we will use the ephemeral template instead.
 
-<img src="../../assets/middleware/rhpam-7-workshop/rhpam70-ephimeral-template.png" width="600" />
+![RHPAM 70 Ephemeral]({% image_path rhpam70-ephemeral-template.png %}){:width="600px"}

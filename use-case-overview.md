@@ -29,13 +29,9 @@ The actors that we can identify are:
 - _Merchant: Seller of the goods and must either fight or accept the chargeback._
 
 
-
 We can resume the process in the following diagram:
 
-
-
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-processing.png"  width="600" />
-
+![CC Dispute Processing]({% image_path business-central-cc-dispute-processing.png %}){:width="600px"}
 
 The basic steps are:
 
@@ -73,19 +69,15 @@ Hence there are two decision's sets that change the overall processing making: O
 
 For the first scenario, going back and forth in the whole processing chain is costly for all the parties involved, plus the amount of the dispute can be less than the cost of processing the dispute, in addition to that the CC Issuer can offer automated chargeback to it's highly loyal customers.
 
-
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-processing-backoffice-processing.png"  width="600" />
-
+![CC Dispute Processing Backoffice Processing]({% image_path business-central-cc-dispute-processing-backoffice-processing.png %}){:width="600px"}
 
 So the first bifurcation point gives Pecunia corp the ability to gain loyalty with strategic customers and avoid cost, this scenario is Automatic vs Standard Processing. The following diagram describes the scenario:
 
-
-
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-processing-automated-chargeback.png"  width="600" />
+![CC Dispute Processing Automated Chargeback]({% image_path business-central-cc-dispute-processing-automated-chargeback.png %}){:width="600px"}
 
 The second use case has the decisions to determine the risk of the transaction and if a manual approval is required.
 
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-processing-manual-standard-processing.png"  width="600" />
+![CC Dispute Processing Manual Standard Processing]({% image_path business-central-cc-dispute-processing-manual-standard-processing.png %}){:width="600px"}
 
 Once that is decided that the dispute will be processed in a standard way, by contacting all the chain of CC transaction processing (3) we have the next bifurcation in step 4 of the processing, based on the case information we need too determine if a dispute needs a manual approval, to such effect  we have the following rule:
 

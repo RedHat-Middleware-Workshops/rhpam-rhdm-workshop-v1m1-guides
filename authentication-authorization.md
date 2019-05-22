@@ -12,23 +12,23 @@ In RHPAM, you have 2 different types of users:
 - platform users: these are the users that interact with the authoring environment, for example the `developer` user that you used to log into the platform
 - application users: these are the users that will interact with the process driven application that you're building with, and running on, the platform. In the case of our _Credit Card Dispute_ system, we have identified 3 different roles that will interact with the process:
 
-<img src="../../assets/middleware/rhpam-7-workshop/ccd-workshop-users.png" width="600" />
+![CCD Work Users]({% image_path ccd-workshop-users.png %}){:width="600px"}
 
 In fact, we can see these are not individual users, but groups that the different user can belong to. Our bank has these 3 groups defined, and the tasks for each group will be defined and configured as you automate the process.
 
 ## User Configuration
 
-1. RHPAM's workbench uses and activity-centered design approach, in which functionality is grouped according to the tasks that a user can (or must) perform. The functionality to administer users and groups can be found in the _Settings_ menu, which can be accessed by clicking on the _gear_ icon <img src="../../assets/middleware/rhpam-7-workshop/gear-icon.png" width="50" /> in the upper right of the screen next to the questionmark icon.
+1. RHPAM's workbench uses and activity-centered design approach, in which functionality is grouped according to the tasks that a user can (or must) perform. The functionality to administer users and groups can be found in the _Settings_ menu, which can be accessed by clicking on the _gear_ icon ![Gear Icon]({% image_path gear-icon.png %}){:width="600px"} in the upper right of the screen next to the questionmark icon.
 
-<img src="../../assets/middleware/rhpam-7-workshop/engine-settings-menu.png" width="600" />
+![Engine Settings Menu]({% image_path engine-settings-menu.png %}){:width="600px"}
 
 2. The _Settings_ menu shows all components that you can configure in your environment. In this step we will focus on the users and groups.
 
-<img src="../../assets/middleware/rhpam-7-workshop/settings-menu.png" width="600" />
+![Settings Menu]({% image_path settings-menu.png %}){:width="600px"}
 
 3. Click the groups icon and you'll see the group administration menu, where you can list the groups that currently exist, update or delete them or create a new group.
 
-<img src="../../assets/middleware/rhpam-7-workshop/groups-menu.png" width="600" />
+![Groups Menu]({% image_path groups-menu.png %}){:width="600px"}
 
 4. Click on `New Group`. We will add the following new groups:
   - `card-holder`{{copy}}
@@ -39,7 +39,7 @@ After you type in the name of the group, in this case `card-holder`{{copy}} sele
 
 5. Repeat for the group `agent`{{copy}} and `agent-manager`{{copy}}.
 
-<img src="../../assets/middleware/rhpam-7-workshop/user-groups-settings-menu.png" width="600" />
+![User Groups Settings Menu]({% image_path user-groups-settings-menu.png %}){:width="600px"}
 
 
 ***You have successfully completed the installation of your environment.***

@@ -5,7 +5,7 @@ In order to be able to correctly install and provision the environment, you need
 
 The following diagram depicts the main components of Red Hat Process Automation Platform.
 
- <img src="../../assets/middleware/rhpam-7-workshop/high-level-capability-compoponents.png" width="600" />
+![High Level Capability Component]({% image_path high-level-capability-compoponents.png %}){:width="600px"}
 
 ## High Level Capabilities Components
 
@@ -24,7 +24,7 @@ A modern workbench that provides user the tooling to build business automation p
 ### Application Builder
 A digital experience platform (DXP) concentrated on tooling to build process driven applications. The platform provides widgets and out-of-the-box components to build the user interfaces for your automation services.
 
-<img src="../../assets/middleware/rhpam-7-workshop/rhpam-7-architecture.png" width="600" />
+![RHPAM 7 Architecture]({% image_path rhpam-7-architecture.png %}){:width="600px"}
 
 ## Architectural components
 
