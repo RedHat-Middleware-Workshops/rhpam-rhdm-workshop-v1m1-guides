@@ -2,28 +2,42 @@ Red Hat Process Automation Manager is part of a rich set of tools to develop ent
 
 The cloud native OpenShift environment has already been provisioned for you. You can access it either via a terminal command line (for example if you're an IT professional) or via a web-based console.
 
+## Environment Details
+
+- The instructor should inform you the `GUID_ID` of this environment which is a unique ID of this workshop;
+- Access your openshift environment: https://master.${GUID_ID}.open.redhat.com/ , replacing `${GUID_ID}` with the actual value provided by the instructor.
+- The instructor should also assign to you a unique user number, which you will use from now on to access your labs enviroment.
+  - Openshift Console username: userX
+  - Openshift Console password: openshift
+
 ## Login
 
 ### Command Line
 
-If you want to login to the OpenShift system via the command line interface, you can do so by executing the following command in the terminal: `oc login -u developer -p developer`{{execute}}
+If you want to login to the OpenShift system via the command line interface, you can do so by executing the following command in the terminal: `oc login OCP_URL login -u userX -p openshift`{{execute}} , for example:
 
-As you can see, the IT engineers have already provisioned an environment for you in a project called _credit-card-dispute_.
+`oc login https://master.guid-123.open.redhat.com:443 login -u user15 -p openshift`
+
+As you can see, the IT engineers have already provisioned an environment for you in a project called _rhpam-userX_.
 
 
 ### Web Console
 
-You can also interact with the OpenShift Container Platform via the Web Console. The OCP Console is available on one of the tabs on the right side of your screen.
+You can also interact with the OpenShift Container Platform via the Web Console. 
 
-- Click on the _OpenShift Console_ tab to open the web-console's login screen
-- Login with username `developer`{{copy}} and password `developer`{{copy}}
-- You will see a list of the projects that you have access to. In this case this is only the Credit Card Dispute project. Click on the project to open the project page.
+- Open the openshift console in your browser using the URL provided in the Environment Details.
+- Login with username `userX`{{copy}} and password `openshift`{{copy}}
+- You will see a list of the projects that you have access to. In this case this is only the _rhpam-userX_ project. Click on the project to open the project page.
 
 ## Red Hat Process Automation Platform
 
-When you click on the project you can see there are 2 deployments listed:
-- cc-dispute-kieserver
-- cc-dispute-rhpamcentr
+When you click on the project you can see there are two applications:
+- `react-web-app`: A react application which comunicates via REST and consumes business assets from our engine;
+- `rhpam73-authoring`: An environment that allows authoring, execution and monitoring of business assets;
+
+Where you can see 2 deployments listed within application `rhpam73-authoring` :
+- `rhpam7-kieserver`
+- `rhpam7-rhpamcentr`
 
 The overview page shows you your working environment. But what if you have special needs of tools and components? Or you simply want to know what you are working on. Lets go ahead and delete the whole project and start a new deployment based on your requirements.
 
