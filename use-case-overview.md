@@ -1,7 +1,6 @@
 # Use Case Overview
 
-The requirements that are handed to you:
-These requirements are the policies of Pecunia Corp. to handle a Credit Card Dispute.
+Based on this information, Pecunia Corp. handed you these policies and requirements about _Credit Card Dispute_ to you.
 
 
 ## Background
@@ -12,23 +11,21 @@ Usually the credit card holder is stressed to protect the assets trusted to the 
 
 Most of the complexity with the CC Dispute process comes from the fact that is a multi-step process where every dispute is a one-off situation, the actual outcome of the dispute is a result of the interactions between the different actors and the decision logic. On top of that, the information regarding the case should be available with every interaction. Everyone needs to look at the same data and be observers of changes in it.
 
-The actors that we can identify are:
+The **actors** that we can identify are:
 
-- _Credit Card Holder: aka Customer_
-
-
-- _Credit Card Issuer: In this case Pecunia corp._
+- _Credit Card Holder_: aka Customer;
 
 
-- _Card processing network:  The organization that oversees the process. Some differ in their procedures than others._
+- _Credit Card Issuer_: In this case Pecunia Corp.;
 
 
-- _Credit Card Acquirer: A financial institution that obtains the rights to the merchant’s account and tasked with getting payment on the merchant’s behalf._
+- _Card processing network_:  The organization that oversees the process. Some differ in their procedures than others;
 
 
-- _Merchant: Seller of the goods and must either fight or accept the chargeback._
+- _Credit Card Acquirer_: A financial institution that obtains the rights to the merchant’s account and tasked with getting payment on the merchant’s behalf;
 
 
+- _Merchant_: Seller of the goods and must either fight or accept the chargeback.
 
 We can resume the process in the following diagram:
 
@@ -36,25 +33,27 @@ We can resume the process in the following diagram:
 
 The basic steps are:
 
-1- _The Credit Card Holder starts a dispute with the CC Issuer._
+1. New Dispute: The Credit Card Holder starts a dispute with the CC Issuer.
 
-2- _The CC Issuer needs to decide what type of processing is required for the dispute (automated chargeback or normal processing).Jump to step 3.1. or 3.2._
+2. Define type of processing: The CC Issuer needs to decide what type of processing is required for the dispute (automated chargeback or normal processing). _This decision either leads to step 2.1. or 2.2._
 
-3.1- _The CC Issuer process the automated chargeback. Jump  to step 5.1._
+    2.1. Automated processing: the CC Issuer process the automated chargeback. _This leads to step 5.1._
 
-3.2 - _The CC Issuer needs to do standard processing. A risk assessment for the dispute is required._
+    2.2. Standard Processing: The CC Issuer needs to do standard processing. A risk assessment for the dispute is required.
 
-4 - _Based on the provided data (credit card holder status, dispute amount, etc.), CC Issuer assesses the risk of the dispute._
+3. Risk Assessment: CC Issuer assesses the risk of the dispute based on the provided data (credit card holder status, dispute amount, etc.).
 
-4.1- _The CC Issuer requests a manual approval for the dispute from a knowledge worker. Jump to step 5.1. or 5.2_
+    3.1. Needs approval: The CC Issuer requests a manual approval for the dispute from a knowledge worker. _This can lead to step 4.1. or 4.2_
 
-4.2- _The CC Issuer based on the data resolves the case by either accepting or rejecting the dispute. Jump to step 5.1. or 5.2_
+    3.2. Issue Resolved: The CC Issuer based on the data resolves the case by either accepting or rejecting the dispute. _This can lead to step 4.1. or 4.2_
 
-5.1- _The dispute is accepted and the money reimbursed to the CC Holder and the backoffice chargeback for fee transactions started_
+4. Dispute is resolved
 
-5.2- _The dispute is rejected_
+    4.1. Dispute accepted: The dispute is accepted and the money reimbursed to the CC Holder and the backoffice chargeback for fee transactions started.
 
-6- _The CC Issuer informs the CC Holder of the result._
+    4.2. Dispute Rejected: The dispute is rejected.
+
+5. Send Notification: The CC Issuer informs the CC Holder of the result.
 
 
 --------------------------------------------------
@@ -62,15 +61,15 @@ The basic steps are:
 ### Business Requirements:
 
 
-There is a point in the process where, depending on a business decision, the processing path bifurcates. The decision making is right now subjective, as a human - in this case a CC Issuer agent- is responsible  to reach a conclusion based on his/her individual knowledge.
+There is a point in the process where, depending on a business decision, the processing path bifurcates. The decision making is right now subjective, as a human - in this case a _CC Issuer_ agent- is responsible  to reach a conclusion based on his/her individual knowledge.
 
 Hence there is a decision set that changes the overall processing: the set that determines whether the dispute can be qualified for automated chargeback.
 
-In this use-case, going back and forth in the whole processing chain as shown in the picture, is costly for all the parties involved, plus the amount of the dispute can be less than the cost of processing the dispute, in addition to that the CC Issuer can offer automated chargeback to it's highly loyal customers.
+In this use-case, going back and forth in the whole processing chain as shown in the picture, is costly for all the parties involved, plus the amount of the dispute can be less than the cost of processing the dispute. Adding to that, the CC Issuer can offer automated chargeback to it's highly loyal customers.
 
 ![CC Dispute Processing Backoffice]({% image_path business-central-cc-dispute-processing-backoffice-processing.png %}){:width="600px"}
 
-So the bifurcation point gives Pecunia corp the ability to gain loyalty with strategic customers and avoid cost. this scenario is Automatic vs Standard Processing. The following diagram describes the scenario:
+So the bifurcation point gives Pecunia corp the ability to gain loyalty with strategic customers and avoid cost. This scenario is Automatic vs Standard Processing. The following diagram describes the scenario:
 
 ![CC Dispute Processing Automated Chargeback]({% image_path business-central-cc-dispute-processing-automated-chargeback.png %}){:width="600px"}
 
