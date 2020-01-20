@@ -30,7 +30,7 @@ An open-source digital experience platform (DXP) that provides tools to build pr
 ## Architectural components
 
 
-In order to be able to correctly install and provision an RHPAM environment, you should first get familiar with the platform components. With the available components in mind you can understand the different possible ways to configure the product and be able to support different use cases. 
+In order to be able to correctly install and provision an RHPAM environment, you should first get familiar with the platform components. With the available components in mind you can understand the different possible ways to configure the product and be able to support different use cases.
 
 On this Workshop, we are considering OCP as the installation platform. The OpenShift self-service console will allow you to provision, recreate, destroy your working environment and be autonomous from other users.
 

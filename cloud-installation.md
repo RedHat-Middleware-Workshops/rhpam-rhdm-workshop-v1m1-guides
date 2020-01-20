@@ -1,12 +1,13 @@
-Red Hat Process Automation Manager is part of a rich set of tools to develop enterprise solution with multiple capabilities, thought to support multidisciplinary teams with the right tools for the tasks at hand.
+# Setting up the work environment
 
-The cloud native OpenShift environment has already been provisioned for you. You can access it either via a terminal command line (for example if you're an IT professional) or via a web-based console.
+Red Hat Process Automation Manager is part of a rich set of tools to develop enterprise solution thought to support multidisciplinary teams with the right tools for the tasks at hand.
+
+The cloud native OpenShift environment has already been provisioned for you. You can access it either via a terminal command line (for example if you're an IT professional) or via a web-based console. In this Workshop you will have your own Openshift namespace to work.
 
 ## Environment Details
 
-- The instructor should inform you the `GUID_ID` of this environment which is a unique ID of this workshop;
-- Access your openshift environment: https://master.${GUID_ID}.open.redhat.com/ , replacing `${GUID_ID}` with the actual value provided by the instructor.
-- The instructor should also assign to you a unique user number, which you will use from now on to access your labs enviroment.
+1. The instructor should inform you the URL of Openshift environment where you can access the labs environment;
+2. The instructor should also assign to you a unique user number, which you will use from now on to access your OCP environment.
   - Openshift Console username: userX
   - Openshift Console password: openshift
 
@@ -23,7 +24,7 @@ As you can see, the IT engineers have already provisioned an environment for you
 
 ### Web Console
 
-You can also interact with the OpenShift Container Platform via the Web Console. 
+You can also interact with the OpenShift Container Platform via the Web Console.
 
 - Open the openshift console in your browser using the URL provided in the Environment Details.
 - Login with username `userX`{{copy}} and password `openshift`{{copy}}
