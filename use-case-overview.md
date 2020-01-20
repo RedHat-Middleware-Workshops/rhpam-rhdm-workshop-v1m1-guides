@@ -1,6 +1,6 @@
 # Use Case Overview
 
-Based on this information, Pecunia Corp. handed you these policies and requirements about _Credit Card Dispute_ to you.
+Based on the process chosen by Pecunia Corp., the business team handed you these policies and requirements about a _Credit Card Dispute_.
 
 
 ## Background
@@ -9,7 +9,7 @@ The cost of processing a credit card dispute is very high, and also critical fro
 
 Usually the credit card holder is stressed to protect the assets trusted to the bank, therefore one of the requirements for the interaction with the dispute system is the constant feedback to the customer, informing the latest status of the dispute. E.g., who is currently processing the dispute, is additional information from the customer required, has the dispute been automatically accepted, has something gone wrong with the dispute, etc.
 
-Most of the complexity with the CC Dispute process comes from the fact that is a multi-step process where every dispute is a one-off situation, the actual outcome of the dispute is a result of the interactions between the different actors and the decision logic. On top of that, the information regarding the case should be available with every interaction. Everyone needs to look at the same data and be observers of changes in it.
+Most of the complexity with the CC Dispute process comes from the fact that is a multi-step process where every dispute is a one-off situation, the actual outcome of the dispute is a result of the interactions between the different actors and the decision logic. On top of that, the information regarding the case should be available with every interaction. Everyone needs to look at the same data and be observers of updates in it.
 
 The **actors** that we can identify are:
 
@@ -27,13 +27,13 @@ The **actors** that we can identify are:
 
 - _Merchant_: Seller of the goods and must either fight or accept the chargeback.
 
-We can resume the process in the following diagram:
+We can resume the actors interaction with the following diagram:
 
 ![CC Dispute Processing]({% image_path business-central-cc-dispute-processing.png %}){:width="600px"}
 
-The basic steps are:
+Usually, the basic steps of a credit card dispute solving are:
 
-1. New Dispute: The Credit Card Holder starts a dispute with the CC Issuer.
+1. New Dispute created: The Credit Card Holder starts a dispute with the CC Issuer.
 
 2. Define type of processing: The CC Issuer needs to decide what type of processing is required for the dispute (automated chargeback or normal processing). _This decision either leads to step 2.1. or 2.2._
 
@@ -58,8 +58,7 @@ The basic steps are:
 
 --------------------------------------------------
 
-### Business Requirements:
-
+### Business Requirements Details:
 
 There is a point in the process where, depending on a business decision, the processing path bifurcates. The decision making is right now subjective, as a human - in this case a _CC Issuer_ agent- is responsible  to reach a conclusion based on his/her individual knowledge.
 
@@ -69,7 +68,7 @@ In this use-case, going back and forth in the whole processing chain as shown in
 
 ![CC Dispute Processing Backoffice]({% image_path business-central-cc-dispute-processing-backoffice-processing.png %}){:width="600px"}
 
-So the bifurcation point gives Pecunia corp the ability to gain loyalty with strategic customers and avoid cost. This scenario is Automatic vs Standard Processing. The following diagram describes the scenario:
+So the bifurcation point gives Pecunia Corp. the ability to gain loyalty with strategic customers and avoid cost. This scenario is Automatic vs Standard Processing. The following diagram describes the scenario:
 
 ![CC Dispute Processing Automated Chargeback]({% image_path business-central-cc-dispute-processing-automated-chargeback.png %}){:width="600px"}
 
@@ -89,9 +88,9 @@ The risk of the transaction is determined by the status of customer and the amou
 - _For a gold customer, and a dispute amount over 500, the risk is medium._
 
 
-### Functional Solution:
+### Functional Requirements:
 
-Have business rules that will take into account consistent criteria defined to assess risk and automate processing. The business user must have the ability to change these criteria anytime if needed, and apply the changes according to the release process of Pecunia corp.. 
+Have business rules that will take into account consistent criteria defined to assess risk and automate processing. The business user must have the ability to change these criteria anytime if needed, and apply the changes according to the release process of Pecunia Corp.. 
 
 
 ### Non Functional:
