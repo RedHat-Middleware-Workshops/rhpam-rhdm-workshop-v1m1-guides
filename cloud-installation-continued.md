@@ -28,8 +28,7 @@ In this lab, we are going to create a new project and provision a whole environm
 
 ![Installation Template Form]({% image_path installation-template-form.png %}){:width="600px"}
 
-5. Scroll down to the bottom of the form and click on the `Create` button. You should be automatically redirected to the `Template Instance Details`. All the details of what is happening, on the left menu you can click on `Events` and observe Openshift processing the template and provisioning all the objects of the new environment. _It's common to see probe failing for a couple of minutes while the services are booting. Feel free to watch the logs and details of pods individually to confirm the services are booting_.
-
+5. Scroll down to the bottom of the form and click on the `Create` button. You should be automatically redirected to the `Template Instance Details`. All the details of what is happening, on the left menu you can click on `Events` and observe OpenShift processing the template and provisioning all the objects of the new environment. _It's common to see probe failing for a couple of minutes while the services are booting. Feel free to watch the logs and details of pods individually to confirm the services are booting_.
 
 6. To check the final status, on the left menu go to  under `Advanced`, select `Projects` and click on the `credit-card-dispute` project. Finally, click on `Workloads` tab.
 
@@ -37,4 +36,4 @@ In this lab, we are going to create a new project and provision a whole environm
 
 ![Installation Provisioned]({% image_path installation-provisioned.png %}){:width="600px"}
 
-Congratulations, you just provisioned an RHPAM environment on Openshift 4! On the next step, let's validate the installation and test the environment.
+Congratulations, you just provisioned an RHPAM environment on OpenShift 4! On the next step, let's validate the installation and test the environment.
