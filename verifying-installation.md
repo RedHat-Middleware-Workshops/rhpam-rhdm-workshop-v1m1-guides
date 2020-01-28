@@ -32,6 +32,8 @@ At this point we are interested on the authoring environment. From this page, yo
  - user: `developer`{{copy}}
  - password: `developer`{{copy}}
 
-And you should see the console as follows:
-
 ![Business Central Console]({% image_path business-central-console.png %}){:width="600px"}
+
+If you can see the page above, this means you could successfully install a working environment where users can author and test their Business Applications.
+
+Let's head over to have an overview about security within Business Central.
