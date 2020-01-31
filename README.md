@@ -5,10 +5,9 @@ This is `module 1` of a full-day hands-on Red Hat Process Automation Manager and
 Agenda
 ===
 * Use Case Overview
-* Understanding the components and installation methods
-* Cloud installation
-* Verfying the installation
-* Securiry of the platform console
+* Overview of RHPAM Components and Architecture
+* Accessing PAM Workbench, Business Central
+* Security configuration of Business Central
 
 Lab Instructions on OpenShift
 ===

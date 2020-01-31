@@ -1,3 +1,4 @@
+<!-- Removed from the workshop -->
 # Installing RHPAM via Template
 
 In this lab, we are going to create a new project and provision a whole environment using the RHPAM Trial Ephemeral.

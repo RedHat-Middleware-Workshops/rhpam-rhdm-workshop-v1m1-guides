@@ -1,15 +1,15 @@
 id: "rhpam_rhdm"
-name: "RHPAM / RHDM Workshop 2019 - Module 1"
+name: "RHPAM / RHDM Workshop 2020 - Module 1"
 
 content:
   url: https://raw.githubusercontent.com/RedHat-Middleware-Workshops/rhpam-rhdm-workshop-v1m1-guides.git/master
 
 vars:
-  OPENSHIFT_DOCS_BASE: "https://docs.openshift.com/container-platform/3.11"
+  OPENSHIFT_DOCS_BASE: "https://docs.openshift.com/container-platform/4.2/welcome/index.html"
   COOLSTORE_PROJECT: "coolstore"
-  DOWNLOAD_CLIENT_WINDOWS: https://mirror.openshift.com/pub/openshift-v3/clients/3.11.16/windows/oc.zip
-  DOWNLOAD_CLIENT_MAC: https://mirror.openshift.com/pub/openshift-v3/clients/3.11.16/macosx/oc.tar.gz
-  DOWNLOAD_CLIENT_LIN64: https://mirror.openshift.com/pub/openshift-v3/clients/3.11.16/linux/oc.tar.gz
+  DOWNLOAD_CLIENT_WINDOWS: https://mirror.openshift.com/pub/openshift-v4/clients/oc/4.2/windows/oc.zip
+  DOWNLOAD_CLIENT_MAC: https://mirror.openshift.com/pub/openshift-v4/clients/oc/4.2/macosx/oc.tar.gz
+  DOWNLOAD_CLIENT_LIN64: https://mirror.openshift.com/pub/openshift-v4/clients/oc/4.2/linux/oc.tar.gz
   #LABS_GIT_REPO: https://github.com/RedHat-Middleware-Workshops/rhpam-rhdm-workshop-v1-labs.git#master
   #LABS_DOWNLOAD_URL: https://github.com/RedHat-Middleware-Workshops/rhpam-rhdm-workshop-v1-labs/archive/master.zip
   #WEB_NODEJS_GIT_REPO: https://github.com/RedHat-Middleware-Workshops/rhpam-rhdm-workshop-v1-labs/tree/master/web-nodejs
@@ -33,7 +33,7 @@ modules:
   - use-case-overview
   - components-overview
   - cloud-installation
-  - cloud-installation-continued
+  # - cloud-installation-continued. # Removed. More time can be spent on PAM features; An operator lab can be added later.
   - verifying-installation
   - authentication-authorization
   - finish

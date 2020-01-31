@@ -1,4 +1,4 @@
-# Setting up the work environment
+# Accessing your work environment
 
 Red Hat Process Automation Manager is part of a rich set of tools to develop enterprise solution thought to support multidisciplinary teams with the right tools for the tasks at hand.
 
@@ -55,16 +55,16 @@ Inside these application you can see three pods listed within the two applicatio
   - `rhpam7-kieserver`: Pod containing PAM execution engine (Kie Server);
   - `rhpam7-rhpamcentr`: Por containing Business Central, for authoring, management and monitoring;
 
-As you can nootice, when deployed on OCP, each component of Red Hat PAM is provisioned within it's own pod.
+As you can notice, when deployed on OCP, each component of Red Hat PAM is provisioned within it's own pod. The components above and environment are the ones which we are going to use during this workshop.
 
-### Provisioning PAM from scratch
+<!-- ### Provisioning PAM from scratch
 
 The Workloads page shows the  current working environment provisioned for you. But what if you have special needs of tools and components? Or you simply want to know what you are working on.
 
 Let's go ahead and create a whole new project using Red Hat PAM Templates and starting a new deployment based on your requirements.
 
 RHPAM 7.5 brings with it an OpenShift operator that can simplify the installation process. The operator creates for the deployed environment an YAML, and based on it, it ensures that the environment remains consistent in all times.  
-
+ -->
 <!---
 #### RHPAM Operator
 
@@ -74,11 +74,15 @@ RHPAM 7.5 brings with it an OpenShift operator that can simplify the installatio
 
 //// -->
 
-#### Templates
+#### RHPAM Installation on OpenShift Overview
 
-What is an installation template? Red Hat Process Automation Manager's design is activity focused. This means that you have predefined environments available for you to deploy depending on what you want to accomplish. The definitions are modeled in the form of templates. A template describes an environment that follows a Red Hat prescriptive deployment architecture. Templates are provided that define and deploys a fully working platform for development, test, production, etc. Depending on whether you want to develop, integrate, test or run processes and other assets, you can choose your environment of choice.
+RHPAM OpenShift installation is based on pre-defined templates. This allows easy deployment of environments that aims specific goals. These goals are modeled in the form of templates. A template describes an environment that follows a Red Hat prescriptive deployment architecture.
 
-Some examples of the available templates are:
+So, depending on whether you want to develop, integrate, test or run processes and other assets, you can choose the template that reflects your environment of choice. When defined the architecture, the user can opt to do the installation via template or using the RHPAM Operator available on the OperatorHub.
+
+![RHPAM Operator]({% image_path rhpam-operator.png %}){:width="600px"}
+
+Here are some examples of the available templates:
 
 - `rhpam75-authoring`: The environment of choice if you are a business user or developer that wants to author business automation projects, assets and applications. Provides an authoring environment including the workbench and an execution server.
 - `rhpam75-authoring-ha`: Same as the previous environment, but with high availability features. This implies that there are multiple (by default 2) instances of Business Central and execution server deployed.
@@ -101,12 +105,7 @@ For example, if you want an environment to author rules and processes, you can u
 <!--- #TODO Update image -->
 ![RHPAM 70 Authoring]({% image_path rhpam70-authoring.png %}){:width="600px"}
 
------------
-
-Quiz: From the previous step, what components do you recognize in this template?
-
------------
-In the case of this workshop, because you need a complete authoring environment with a process server where you can test your assets, we could (or should) deploy the authoring environment. However due to the restrictions of this environment (the platform does not provide persistent storage), we will use the ephemeral template instead.
+For this workshop, the authoring template would be enough to provide a complete authoring environment with a process server for you to test your assets. However due to the restrictions of this environment (the platform does not provide persistent storage), the installation was made based on the ephemeral template instead.
 
 <!--- #TODO Update image -->
 ![RHPAM 70 Ephemeral]({% image_path rhpam70-ephemeral-template.png %}){:width="600px"}

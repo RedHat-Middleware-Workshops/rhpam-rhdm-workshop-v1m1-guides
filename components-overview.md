@@ -4,7 +4,7 @@ Red Hat Process Automation Manager enables you to automate different pieces of y
 
 The following diagram depicts the main capabilities of Red Hat Process Automation Platform (RHPAM).
 
-![High Level Capability Component]({% image_path high-level-capability-compoponents.png %}){:width="600px"}
+![High Level Capability Component]({% image_path high-level-capability-components.png %}){:width="600px"}
 
 ## Capabilities Overview
 
@@ -16,11 +16,14 @@ RHPAM includes all the benefits of Red Hat Decision Manager, therefore, it conta
 - Usage of test scenario to validate the rules;
 - Complex Event Processing, decision made on top of time-based events (i.e. fraud detection);
 
-### Business Optimization
+### Business Optimizer
 An AI Constraint Satisfaction Solver that optimizes business resource planning use cases such as vehicle routing, employee rostering and conference scheduling. The platform optimizes the goal of a problem based on limited resources under specific constraints. The engine is based on the upstream [OptaPlanner](http://www.optaplanner.org) project.
 
-### Process/Case Management
+### Process Management
 A high-performant, lightweight and scalable, BPMN2 compliant, process execution engine based on the open-source [jBPM](http://www.jbpm.org) project. Provides functionality like business process management, case management and human task management, to enable the automation and optimization of processes and cases.
+
+### Application management
+A modern workbench that provides user the tooling to build business automation projects consisting of processes, rules, cases, and forms. Also, the workbench provides the management and monitoring functionality to build, deploy, run, manage and monitor business automation and process driven applications.
 
 ### Application Builder
 An open-source digital experience platform (DXP) that provides tools to build process-driven applications. This Kubernetes-native platform provides a way to create micro front-ends, use widgets and out-of-the-box components to build the user interfaces for your automation services.
@@ -29,15 +32,13 @@ An open-source digital experience platform (DXP) that provides tools to build pr
 
 ## Architectural components
 
-
 In order to be able to correctly install and provision an RHPAM environment, you should first get familiar with the platform components. With the available components in mind you can understand the different possible ways to configure the product and be able to support different use cases.
 
 On this Workshop, we are considering OCP as the installation platform. The OpenShift self-service console will allow you to provision, recreate, destroy your working environment and be autonomous from other users.
 
+Red Hat PAM main components and capabilities are displayed in this diagram:
 
-Red Hat PAM main components are described in this diagram:
-
-![RHPAM 7 Architecture]({% image_path rhpam-7-architecture.png %}){:width="600px"}
+![RHPAM 7 Componens]({% image_path rhpam-components.png %}){:width="600px"}
 
 ### Business Central Monitoring
 A modern web-based workbench that provides user the tooling to manage and monitor deployed projects, running engines, running instances of process-driven applications and more.
@@ -60,9 +61,14 @@ The lightweight, cloud-native, execution engine that runs the rules and processe
 ### Smart Router
 Provides a runtime abstraction layer over the KIE-Server topology, allowing clients of this topology to interact with a single endpoint. Smart Router contains the information of which processes and rules (deployment units) are deployed on which runtime engine/KIE-Server, and provides routing functionality to the correct server instance based on the client request. In a classical enterprise environment where you have multiple instances running and different nodes, starting and shutting down in an elastic way, the complexity of tracking these changes in order to correctly load-balance the requests is the responsibility of the Smart Router.
 
+## PAM architecture
+
+RHPAM can be architected in some different ways, this is a represention of one of the possible architectures:
+
+![RHPAM 7 Architecture]({% image_path rhpam-7-architecture.png %}){:width="600px"}
+
 ----
 
 # About the environment in this Workshop
 
-For this course you will install an environment containing only the components needed to author, deploy, test and run your assets.
-Because a critical capability of a digitally enabled product is to be available as a service, we are going to leverage  OpenShift Container Platform has a self-service console where you can choose the different tools needed depending on your skills, LOB and solution.
+Because a critical capability of a digitally enabled product is to be available as a service, we are going to leverage  OpenShift Container Platform as a self-service console where you can choose the different tools needed depending on your skills, LOB and solution.
