@@ -1,7 +1,5 @@
 # Introduction
 
-## What this module covers
-
 During this module, you will have an overview of:
 
 - The business use case you will solve with PAM;
