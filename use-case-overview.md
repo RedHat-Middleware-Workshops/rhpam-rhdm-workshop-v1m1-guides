@@ -12,11 +12,11 @@ Pecunia Corp. is a credit card issuer company going through digital transformati
 
 To better understand the scenario of a credit card dispute and the existing gaps, first let's take a look at the involved **actors**:
 
-- _Credit Card Holder_: aka Customer;
-- _Credit Card Issuer_: In this case, Pecunia Corp.;
-- _Card processing network_: The credit card network processes transactions between merchants and cc issuers;
-- _Credit Card Acquirer_: A financial institution that obtains the rights to the merchant’s account and tasked with getting payment on the merchant’s behalf; It facilitates the credit transaction by intermediating issuer and merchant.
-- _Merchant_: Seller of the goods and must either fight or accept the chargeback.
+- Credit Card Holder: aka Customer;
+- Credit Card Issuer: In this case, Pecunia Corp.;
+- Card Processing Network: The credit card network processes transactions between merchants and cc issuers;
+- Credit Card Acquirer: A financial institution that obtains the rights to the merchant’s account and tasked with getting payment on the merchant’s behalf; It facilitates the credit transaction by intermediating issuer and merchant.
+- Merchant: Seller of the goods and must either fight or accept the chargeback.
 
 With that in mind, let's talk about the internal **processing** and **decisions** that happens when a CC Holder (customer) opens a new credit card dispute:
 
@@ -24,7 +24,7 @@ With that in mind, let's talk about the internal **processing** and **decisions*
 
 2. Define type of processing: The CC Issuer needs to decide what type of processing is required for the dispute (automated chargeback or normal processing). _This decision either leads to step 2.1. or 2.2._
 
-    2.1. Automated processing: the CC Issuer process the automated chargeback. _This leads to step 5.1._
+    2.1. Automated processing: the CC Issuer process the automated chargeback. _This leads to step 4.1._
 
     2.2. Standard Processing: The CC Issuer needs to do standard processing. A risk assessment for the dispute is required.
 
@@ -41,6 +41,20 @@ With that in mind, let's talk about the internal **processing** and **decisions*
     4.2. Dispute Rejected: The dispute is rejected.
 
 5. Send Notification: The CC Issuer informs the CC Holder of the result.
+
+Check a summary below:
+
+- A new dispute is created, processed, solved, and the customer gets notified.:
+
+![Use Case Overview]({% image_path use-case-overview.png %}){:width="600px"}
+
+- During the internal solving, it can be processed automatically or manually based on the existing data:
+
+![Automated Processing]({% image_path use-case-automated-processing.png %}){:width="600px"}
+
+- If manually processed, based on the risk assessmentm it can be sent for a knowledge worker for approval:
+
+![Standard Processing]({% image_path use-case-standard-processing.png %}){:width="600px"}
 
 Most of the complexity with the CC Dispute process comes from the fact that is a multi-step process where every dispute is a one-off situation, the actual outcome of the dispute is a result of the interactions between the different actors and the decision logic. On top of that, the information regarding the case should be available with every interaction. Everyone needs to look at the same data and be observers of updates in it.
 
@@ -62,11 +76,11 @@ This is the set of rules that can be used to determine the risk involved on the 
 - _For a gold customer, and a dispute amount over 500, the risk is medium._
 
 
-#### Functional Requirements:
+#### Functional Requirements for the Decision Automation:
 
 Have business rules that will take into account consistent criteria defined to assess risk and automate processing. The business user must have the ability to change these criteria anytime if needed, and apply the changes according to the release process of Pecunia Corp.. 
 
 
-#### Non Functional:
+#### Non Functional for the Decision Automation:
 
 Allow the user to change the criteria without technical assistance. Have the tooling for the user to update the rules but using standard spreadsheet-like decision tables or quasi natural language.

@@ -7,9 +7,7 @@ content:
 vars:
   OPENSHIFT_DOCS_BASE: "https://docs.openshift.com/container-platform/4.2/welcome/index.html"
   COOLSTORE_PROJECT: "coolstore"
-  DOWNLOAD_CLIENT_WINDOWS: https://mirror.openshift.com/pub/openshift-v4/clients/oc/4.2/windows/oc.zip
-  DOWNLOAD_CLIENT_MAC: https://mirror.openshift.com/pub/openshift-v4/clients/oc/4.2/macosx/oc.tar.gz
-  DOWNLOAD_CLIENT_LIN64: https://mirror.openshift.com/pub/openshift-v4/clients/oc/4.2/linux/oc.tar.gz
+  DOWNLOAD_CLIENT: https://mirror.openshift.com/pub/openshift-v4/clients/oc/4.2/
   #LABS_GIT_REPO: https://github.com/RedHat-Middleware-Workshops/rhpam-rhdm-workshop-v1-labs.git#master
   #LABS_DOWNLOAD_URL: https://github.com/RedHat-Middleware-Workshops/rhpam-rhdm-workshop-v1-labs/archive/master.zip
   #WEB_NODEJS_GIT_REPO: https://github.com/RedHat-Middleware-Workshops/rhpam-rhdm-workshop-v1-labs/tree/master/web-nodejs
