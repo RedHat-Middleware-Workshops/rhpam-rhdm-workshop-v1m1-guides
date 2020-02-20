@@ -6,6 +6,7 @@ The cloud native OpenShift environment has already been provisioned for you. You
 
 1. [Red Hat Openshift Container Platform]({{ OPENSHIFT_CONSOLE_URL }}){:target="_blank"}
 2. The instructor should also assign to you a unique user number, which you will use from now on to access your OCP environment.
+
   - OpenShift Console username: userX (i.e. user1)
   - OpenShift Console password: openshift
 
@@ -17,10 +18,10 @@ In this workshop, you can choose between two possible ways to interact with Open
 
 To access OpenShift via the Web Console:
 
-- Open the [Red Hat Openshift Console]({{ OPENSHIFT_CONSOLE_URL }}){:target="_blank"} in your browser.
-- Login with username `userX`{{copy}} and password `openshift`{{copy}}
-- You will see a list of the projects that you have access to. In this case, only the _rhpam-userX_ project.
-- Click on the project to open the project page.
+1. Open the [Red Hat Openshift Console]({{ OPENSHIFT_CONSOLE_URL }}){:target="_blank"} in your browser.
+2. Login with username `userX`{{copy}} and password `openshift`{{copy}}
+3. You will see a list of the projects that you have access to. In this case, only the _rhpam-userX_ project.
+4. Finally, click on the project to open the project page.
 
 ### Via Command Line
 
@@ -30,11 +31,11 @@ The easiest way to login to the OpenShift system via the command line interface,
 
 ![OCP Copy Login Command]({% image_path ocp-copy-login-command.png %}){:width="600px"}
 
-- Login to OpenShift Web Console
-- Click on `Copy Login Command`
-- OpenShift will request your credentials again. Inform them.
-- Click on `Display Token`
-- Look for the `Login with this token` session, and copy the command which is similar to:
+1. Login to OpenShift Web Console
+2. Click on `Copy Login Command`
+3. OpenShift will request your credentials again. Inform them.
+4. Click on `Display Token`
+5. Look for the `Login with this token` session, and copy the command which is similar to:
 
 ```
 oc login --token=rVO1oDOjspF6CLTW53zddinWRrpxAfDsywzptM0jsiY --server=https://api.cluster-rio-ead1.rio-ead1.example.opentlc.com:6443
@@ -115,4 +116,5 @@ For example, if you want an environment to author rules and processes, you can u
 For this workshop, the authoring template would be enough to provide a complete authoring environment with a process server for you to test your assets. However due to the restrictions of the infrastructure of this environment (the platform does not provide persistent storage), the installation was made based on the ephemeral template instead.
 
 ![RHPAM 70 Ephemeral]({% image_path rhpam-ephemeral-template.png %}){:width="600px"}
-accessing-pam.md
+
+Now that we know more details about the environment where PAM is running, let's access it!
