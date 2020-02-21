@@ -4,11 +4,10 @@ The cloud native OpenShift environment has already been provisioned for you. You
 
 ## Environment Details
 
-1. [Red Hat Openshift Container Platform]({{ OPENSHIFT_CONSOLE_URL }}){:target="_blank"}
+1. This is the link to access [Red Hat Openshift Container Platform](https://{{ OPENSHIFT_CONSOLE_URL }}){:target="_blank"}
 2. The instructor should also assign to you a unique user number, which you will use from now on to access your OCP environment.
-
-  - OpenShift Console username: userX (i.e. user1)
-  - OpenShift Console password: openshift
+    - OpenShift Console username: userX (i.e. user1)
+    - OpenShift Console password: openshift
 
 ## Login on OpenShift
 
@@ -18,7 +17,7 @@ In this workshop, you can choose between two possible ways to interact with Open
 
 To access OpenShift via the Web Console:
 
-1. Open the [Red Hat Openshift Console]({{ OPENSHIFT_CONSOLE_URL }}){:target="_blank"} in your browser.
+1. Open the [Red Hat Openshift Container Platform](https://{{ OPENSHIFT_CONSOLE_URL }}){:target="_blank"} in your browser.
 2. Login with username `userX`{{copy}} and password `openshift`{{copy}}
 3. You will see a list of the projects that you have access to. In this case, only the _rhpam-userX_ project.
 4. Finally, click on the project to open the project page.
@@ -31,7 +30,7 @@ The easiest way to login to the OpenShift system via the command line interface,
 
 ![OCP Copy Login Command]({% image_path ocp-copy-login-command.png %}){:width="600px"}
 
-1. Login to OpenShift Web Console
+1. Login to [Openshift Console](https://{{ OPENSHIFT_CONSOLE_URL }}){:target="_blank"}
 2. Click on `Copy Login Command`
 3. OpenShift will request your credentials again. Inform them.
 4. Click on `Display Token`
@@ -41,7 +40,7 @@ The easiest way to login to the OpenShift system via the command line interface,
 oc login --token=rVO1oDOjspF6CLTW53zddinWRrpxAfDsywzptM0jsiY --server=https://api.cluster-rio-ead1.rio-ead1.example.opentlc.com:6443
 ```
 
-As you can see, we have already provisioned an environment for you, and a project called _rhpam-userX_.
+We have already provisioned an environment for you, and a project called **_rhpam-userX_**.
 
 ## Red Hat Process Automation Manager on OpenShift Platform
 

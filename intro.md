@@ -11,6 +11,6 @@ We will inform the access details for each environment later on as we get to the
 
 # Your Working Environment
 
-A whole environment with Red Hat Process Automation Manager has already been provisioned for you within an OpenShift environment.
+A whole environment with Red Hat Process Automation Manager has already been provisioned for you within an OpenShift platform.
 
-The access information to the environment like url,user and passowrd will be displayed along with the instructions as you go through the guide.
+The access information to the environment like url, user and password will be displayed along with the instructions as you go through the guide.
