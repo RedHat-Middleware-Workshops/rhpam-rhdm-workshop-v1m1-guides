@@ -3,18 +3,21 @@ config:
 
 modules:
   intro:
-    name: Introduction
+    name: Introduction and Working Environment
   use-case-overview:
     name: Use Case Introduction
   components-overview:
-    name: Understanding the components and installation methods
+    name: RHPAM Components and Architecture
   cloud-installation:
-    name: Cloud installation
-  cloud-installation-continued:
-    name: Cloud installation continued
-  verifying-installation:
-    name: Verifying the installation
+    name: Cloud Environment
+  # Removed temporarily until operator module is complete
+  # cloud-installation-continued:
+  #   name: Cloud installation continued
+  # verifying-installation:
+  #   name: Verifying the installation
+  accessing-pam:
+    name: Accessing Business Central
   authentication-authorization:
-    name: Security of the platform console
+    name: Business Central Security
   finish:
     name: Conclusion
