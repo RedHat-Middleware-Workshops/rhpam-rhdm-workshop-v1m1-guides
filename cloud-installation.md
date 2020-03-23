@@ -4,7 +4,7 @@ The cloud native OpenShift environment has already been provisioned for you. You
 
 ## Environment Details
 
-1. This is the link to access [Red Hat Openshift Container Platform](https://{{ OPENSHIFT_CONSOLE_URL }}){:target="_blank"}
+1. This is the link to access [Red Hat Openshift Container Platform]({{ OPENSHIFT_CONSOLE_URL }}){:target="_blank"}
 2. The instructor should also assign to you a unique user number, which you will use from now on to access your OCP environment.
     - OpenShift Console username: userX (i.e. user1)
     - OpenShift Console password: openshift
