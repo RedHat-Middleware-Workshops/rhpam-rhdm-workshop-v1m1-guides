@@ -17,14 +17,14 @@ In this workshop, you can choose between two possible ways to interact with Open
 
 To access OpenShift via the Web Console:
 
-1. Open the [Red Hat Openshift Container Platform](https://{{ OPENSHIFT_CONSOLE_URL }}){:target="_blank"} in your browser.
+1. Open the [Red Hat Openshift Container Platform](https://{{ OPENSHIFT_CONSOLE_URL }}) in your browser.
 2. Login with username `userX`{{copy}} and password `openshift`{{copy}}
 3. You will see a list of the projects that you have access to. In this case, only the _rhpam-userX_ project.
 4. Finally, click on the project to open the project page.
 
 ### Via Command Line
 
-In order to login via CLI, you will need in your local environment the OpenShift CLI tool. If you don't have it, you can select and download the [OpenShift CLI tool](https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.2.25/openshift-client-linux-4.2.25.tar.gz){:target="_blank"} according to your environment.
+In order to login via CLI, you will need in your local environment the OpenShift CLI tool. If you don't have it, you can select and download the [OpenShift CLI tool](https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.2.25/openshift-client-linux-4.2.25.tar.gz) according to your environment.
 
 The easiest way to login to the OpenShift system via the command line interface, is to access it via Web Console, log in and click on `Copy Login Command`.
 
