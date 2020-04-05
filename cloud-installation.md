@@ -24,7 +24,7 @@ To access OpenShift via the Web Console:
 
 ### Via Command Line
 
-In order to login via CLI, you will need in your local environment the OpenShift CLI tool. If you don't have it, you can select and download the [OpenShift CLI tool]({{ OPENSHIFT_DOWNLOAD_CLIENT }}){:target="_blank"} according to your environment.
+In order to login via CLI, you will need in your local environment the OpenShift CLI tool. If you don't have it, you can select and download the [OpenShift CLI tool](https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.2.25/openshift-client-linux-4.2.25.tar.gz){:target="_blank"} according to your environment.
 
 The easiest way to login to the OpenShift system via the command line interface, is to access it via Web Console, log in and click on `Copy Login Command`.
 
