@@ -17,7 +17,7 @@ In this workshop, you can choose between two possible ways to interact with Open
 
 To access OpenShift via the Web Console:
 
-1. Open the [Red Hat Openshift Container Platform](https://{{ OPENSHIFT_CONSOLE_URL }}) in your browser.
+1. Open the [Red Hat Openshift Container Platform]({{ OPENSHIFT_CONSOLE_URL }}) in your browser.
 2. Login with username `userX`{{copy}} and password `openshift`{{copy}}
 3. You will see a list of the projects that you have access to. In this case, only the _rhpam-userX_ project.
 4. Finally, click on the project to open the project page.
