@@ -25,9 +25,6 @@ A high-performant, lightweight and scalable, BPMN2 compliant, process execution 
 ### Application management
 A modern workbench that provides user the tooling to build business automation projects consisting of processes, rules, cases, and forms. Also, the workbench provides the management and monitoring functionality to build, deploy, run, manage and monitor business automation and process driven applications.
 
-### Application Builder
-An open-source digital experience platform (DXP) that provides tools to build process-driven applications. This Kubernetes-native platform provides a way to create micro front-ends, use widgets and out-of-the-box components to build the user interfaces for your automation services.
-
 ---
 
 ## Architectural components
