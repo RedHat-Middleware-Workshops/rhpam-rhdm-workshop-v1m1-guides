@@ -46,9 +46,13 @@ We have already provisioned an environment for you, and a project called **_rhpa
 
 ## Red Hat Process Automation Manager on OpenShift Platform
 
-After clicking on the project, select the `Workloads` tab. You can see there are two applications:
+Once you are in the platform, on the left menu you can find the `Home` section, and under it, you shoud click on `Projects`. You can see there are two applications:
+
   - `react-web-app`: A react application which communicates via REST and consumes business assets from PAM engine (Kie Server);
+
   - `rhpam75-trial-ephemeral`: An environment that allows authoring, execution and monitoring of business assets; _This is an ephemeral environment, in other words, it does not have persistent storage._
+
+  ![RHPAM Operator]({% image_path rhpam-projects.png %}){:width="600px"}
 
 Inside these application you can see three pods listed:
 
