@@ -4,8 +4,8 @@ config:
 modules:
   intro:
     name: Introduction and Working Environment
-  use-case-overview:
-    name: Use Case Introduction
+  #use-case-overview:
+  #  name: Use Case Introduction
   components-overview:
     name: RHPAM Components and Architecture
   cloud-installation:
@@ -20,4 +20,4 @@ modules:
   authentication-authorization:
     name: Business Central Security
   finish:
-    name: Conclusion
+    name: Conclusion  
