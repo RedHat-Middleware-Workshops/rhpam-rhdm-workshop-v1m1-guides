@@ -1,4 +1,4 @@
-#  Business Central Security
+# 5. Accessing Business Central
 
 So far you received access to the OpenShift where your PAM environment is available. Now we will access PAM workbench known as Business Central.
 

@@ -1,4 +1,4 @@
-# RHPAM Components and Architecture
+# 3. RHPAM Components and Architecture
 
 Red Hat Process Automation Manager (a.k.a. RHPAM ) enables you to automate different pieces of your business requirements like automating the decision making, the flow of the decision making, the interaction between the people and systems.
 

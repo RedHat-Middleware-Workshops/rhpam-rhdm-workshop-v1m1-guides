@@ -1,4 +1,4 @@
-# Security in PAM
+# 6. Users and Groups security within Red Hat PAM
 
 Red Hat Process Automation Manager security system is based on users, roles and groups. These configurations comes by default from the application server PAM is running on top of, in this case Red Hat Enterprise Application Server (Red Hat EAP).  
 

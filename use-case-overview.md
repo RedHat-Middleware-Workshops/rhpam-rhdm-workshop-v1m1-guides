@@ -1,4 +1,4 @@
-# Use Case Overview
+# 2. Use Case Overview
 
 You are a business automation specialist consultant who was hired by a bank, Pecunia Corp. They need you to automate a critical scenario: the _Loan Approval Process_.
 

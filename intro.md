@@ -1,4 +1,4 @@
-# Introduction
+# 1. Introduction
 
 Welcome to the first module of the Red Hat Process Automation Manager (RHPAM) workshop. During this module, you will have an overview of:
 
@@ -9,7 +9,7 @@ Welcome to the first module of the Red Hat Process Automation Manager (RHPAM) wo
 
 We will inform the access details for each environment later on as we get to the hands-on exercises. Let's start by first understanding the use case we will solve.
 
-# Your Working Environment
+**Your Working Environment**
 
 A whole environment with Red Hat Process Automation Manager has already been provisioned for you within an OpenShift platform.
 

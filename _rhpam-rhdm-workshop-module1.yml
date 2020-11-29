@@ -29,10 +29,11 @@ modules:
   activate:
   - intro
   - use-case-overview
-  -   components-overview
-  - cloud-installation
+  - components-overview
+  - workshop-environment
   # - cloud-installation-continued. # Removed. More time can be spent on PAM features; An operator lab can be added later.
   #- verifying-installation
   - accessing-pam
   - authentication-authorization
+  - rhpam-openshift
   - finish
