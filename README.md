@@ -4,10 +4,13 @@ This is `module 1` of a full-day hands-on Red Hat Process Automation Manager and
 
 Agenda
 ===
+* Introduction
 * Use Case Overview
 * Overview of RHPAM Components and Architecture
-* Accessing PAM Workbench, Business Central
-* Security configuration of Business Central
+* Accessing the workshop environment
+* Red Hat PAM users and groups
+* Red Hat PAM on OpenShift
+* Conclusion
 
 Run locally
 === 
