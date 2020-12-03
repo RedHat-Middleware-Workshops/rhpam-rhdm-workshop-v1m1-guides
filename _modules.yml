@@ -17,8 +17,8 @@ modules:
   #   name: Verifying the installation
   accessing-pam:
     name: Accessing Red Hat PAM
-  authentication-authorization:
-    name: Business Central Security
+  # authentication-authorization:
+  #  name: Business Central Security
   rhpam-openshift:
     name: Red Hat PAM on OpenShift Container Platform
   finish:

@@ -34,6 +34,6 @@ modules:
   # - cloud-installation-continued. # Removed. More time can be spent on PAM features; An operator lab can be added later.
   #- verifying-installation
   - accessing-pam
-  - authentication-authorization
+  #- authentication-authorization
   - rhpam-openshift
   - finish
