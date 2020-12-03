@@ -37,4 +37,4 @@ At this point we are interested on the authoring environment. From this page, yo
 
 If you can see the page above, this means you could access the working environment where users can author and test their Business Applications.
 
-Let's head over to have an overview about how user authentication and authorization works within Business Central.
+Let's head over to have an overview about how Red Hat PAM works on cloud CaaS environments like OpenShift.

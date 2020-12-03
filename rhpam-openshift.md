@@ -1,4 +1,4 @@
-#### 7. Overview: RHPAM Installation on OpenShift
+# 6. Overview: RHPAM Installation on OpenShift
 
 RHPAM installation on OpenShift can be made using an Operator or using pre-defined templates. This allows easy deployment of environments that aims specific goals.
 
@@ -31,7 +31,7 @@ Like mentioned, you have available some pre-defined templates to deploy PAM. Her
 - Do you have a requirement for high availability of the platform?
 - What kind of database do you want to integrate with? -->
 
-For example, if you want an environment to author rules and processes, you can use the `rhpam75-authoring` that contains all the components necessary to do so. See the image below.
+For example, if you want an environment to author rules and processes, you can use the `rhpam79-authoring` that contains all the components necessary to do so. See the image below.
 
 ![RHPAM 70 Authoring]({% image_path rhpam-authoring.png %}){:width="600px"}
 
