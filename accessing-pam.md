@@ -14,10 +14,10 @@ _Jump to step 2 if you're already logged into OpenShift._
 
 1. [Go to your Openshift console]({{ OPENSHIFT_CONSOLE_URL }}){:target="_blank"} tab.  If you're not yet logged in, or have been logged out, login using the same credentials as before:
 
-- user: `userX`{{copy}}
-- password: `openshift`{{copy}}
+	- user: `userX`{{copy}}
+	- password: `openshift`{{copy}}
 
-![OpenShift Console]({% image_path openshift-console.png %}){:width="600px"}
+	![OpenShift Console]({% image_path openshift-console.png %}){:width="600px"}
 
 2. Make sure you are on the `Developer` perspective. On the left menu, select the `Topology` option and check if you have the `rhpam-userX` project selected. .
 

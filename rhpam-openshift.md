@@ -33,8 +33,10 @@ Like mentioned, you have available some pre-defined templates to deploy PAM. Her
 
 For example, if you want an environment to author rules and processes, you can use the `rhpam79-authoring` that contains all the components necessary to do so. See the image below.
 
-![RHPAM 70 Authoring]({% image_path rhpam-authoring.png %}){:width="600px"}
+	![RHPAM Authoring]({% image_path rhpam-authoring.png %}){:width="600px"}
 
-For this workshop, the authoring template would be enough to provide a complete authoring environment with a process server for you to test your assets. However due to the restrictions of the infrastructure of this environment (the platform does not provide persistent storage), the installation was made based on the ephemeral template instead.
+For this workshop, the authoring template is enough to provide a complete authoring environment with a process server for you to test your assets. 
 
-![RHPAM 70 Ephemeral]({% image_path rhpam-ephemeral-template.png %}){:width="600px"}
+If want to provision a simple test environment without a persistent storage, the installation can be made with the ephemeral template instead.
+
+	![RHPAM Ephemeral]({% image_path rhpam-ephemeral-template.png %}){:width="600px"}

@@ -46,21 +46,19 @@ We have already provisioned an environment for you, and a project called **_rhpa
 
 ## Red Hat Process Automation Manager on OpenShift Platform
 
-Once you are in the platform, on the left menu you can find the `Home` section, and under it, you shoud click on `Projects`. Select the project `rhpam-userX`, and click on the `Workloads` tab. You can see there are two applications:
+Once you are in the platform, on the left menu you can find the `Home` section, and under it, you shoud click on `Projects`. Select the project `rhpam-userX`, and click on the `Workloads` tab. You can see there are three `Deployment Configs`:
 
   - `react-web-app`: A react application which communicates via REST and consumes business assets from PAM engine (Kie Server);
 
-  - `rhpam78-authoring`: An environment that allows authoring, execution and monitoring of business assets; 
+  - `rhpam7-kieserver` and `rhpam7-rhpamcentr`: An environment that allows authoring, execution and monitoring of business assets; 
 
-  ![RHPAM Operator]({% image_path rhpam-projects.png %}){:width="600px"}
+  ![RHPAM Projects]({% image_path rhpam-projects.png %}){:width="600px"}
 
-Inside these application you can see three pods listed:
+Inside each `Deployment Configs` you should see one pods listed:
 
-  - `react-web-app`
-    - `react-web-app`: Pod containing the react client application;
-  - `rhpam78-authoring`
-    - `rhpam7-kieserver`: Pod containing PAM execution engine (Kie Server);
-    - `rhpam7-rhpamcentr`: Por containing Business Central, for authoring, management and monitoring;
+  - `react-web-app`: Pod containing the react client application;
+  - `rhpam7-kieserver`: Pod containing PAM execution engine (Kie Server);
+  - `rhpam7-rhpamcentr`: Por containing Business Central, for authoring, management and monitoring;
 
 As you can notice, when deployed on OCP, each component of Red Hat PAM is provisioned within it's own pod. The components above and environment are the ones which we are going to use during this workshop.
 
