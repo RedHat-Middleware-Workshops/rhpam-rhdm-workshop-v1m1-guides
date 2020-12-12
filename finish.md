@@ -13,7 +13,7 @@ To access OpenShift via the Web Console:
 
 To access Business Central: 
 
-1. Login to your [Openshift console](https://{{ OPENSHIFT_CONSOLE_URL }}){:target="_blank"} tab.
+1. Login to your [Openshift console]({{ OPENSHIFT_CONSOLE_URL }}){:target="_blank"} tab.
 
 2. Make sure you are on the `Developer` perspective. On the left menu, select the `Topology` option and check if you have the `rhpam-userX` project selected. .
 

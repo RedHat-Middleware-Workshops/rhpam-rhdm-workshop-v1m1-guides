@@ -32,7 +32,7 @@ The easiest way to login to the OpenShift system via the command line interface,
 
 ![OCP Copy Login Command]({% image_path ocp-copy-login-command.png %}){:width="600px"}
 
-1. Login to [Openshift Console](https://{{ OPENSHIFT_CONSOLE_URL }}){:target="_blank"}
+1. Login to [Openshift Console]({{ OPENSHIFT_CONSOLE_URL }}){:target="_blank"}
 2. Click on `Copy Login Command`
 3. OpenShift will request your credentials again. Inform them.
 4. Click on `Display Token`
