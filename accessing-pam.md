@@ -12,7 +12,7 @@ Let's start by accessing your business central.
 
 _Jump to step 2 if you're already logged into OpenShift._
 
-1. [Go to your Openshift console](https://{{ OPENSHIFT_CONSOLE_URL }}){:target="_blank"} tab.  If you're not yet logged in, or have been logged out, login using the same credentials as before:
+1. [Go to your Openshift console]({{ OPENSHIFT_CONSOLE_URL }}){:target="_blank"} tab.  If you're not yet logged in, or have been logged out, login using the same credentials as before:
 
 - user: `userX`{{copy}}
 - password: `openshift`{{copy}}
