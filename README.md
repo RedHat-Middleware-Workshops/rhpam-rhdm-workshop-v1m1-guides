@@ -18,7 +18,7 @@ Run locally
 ```
 $ git clone https://github.com/RedHat-Middleware-Workshops/rhpam-rhdm-workshop-v1m1-guides.git
 $ cd rhpam-rhdm-workshop-v1m1-guides
-$ docker run -it --rm -p 8080:8080 -v $(pwd):/app-data -e CONTENT_URL_PREFIX="file:///app-data" -e WORKSHOPS_URLS="file:///app-data/_rhpam-rhdm-workshop-module1.yml" -e LOG_TO_STDOUT=true quay.io/osevg/workshopper
+$ docker run -it --rm -p 8080:8080 -v $(pwd)/:/app-data -e CONTENT_URL_PREFIX="file:///app-data" -e WORKSHOPS_URLS="file:///app-data/_rhpam-rhdm-workshop-module1.yml" -e LOG_TO_STDOUT=true quay.io/osevg/workshopper
 ```
 
 Lab Instructions on OpenShift
