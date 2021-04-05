@@ -51,7 +51,7 @@ spec:
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-    name: pam-fuse-loan-approval
+    name: wksp-pam-dm-m1-route
     namespace: bu-wksp-pam-dm-m1
     labels:
       app: wksp-pam-dm-m1
