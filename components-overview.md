@@ -1,6 +1,6 @@
-# RHPAM Components and Architecture
+# 3. RHPAM Components and Architecture
 
-Red Hat Process Automation Manager enables you to automate different pieces of your business requirements like automating the decision making, the flow of the decision making, the interaction between the people and systems, etc.
+Red Hat Process Automation Manager (a.k.a. RHPAM ) enables you to automate different pieces of your business requirements like automating the decision making, the flow of the decision making, the interaction between the people and systems.
 
 The following diagram depicts the main capabilities of Red Hat Process Automation Platform (RHPAM).
 
@@ -20,22 +20,29 @@ RHPAM includes all the benefits of Red Hat Decision Manager, therefore, it conta
 An AI Constraint Satisfaction Solver that optimizes business resource planning use cases such as vehicle routing, employee rostering and conference scheduling. The platform optimizes the goal of a problem based on limited resources under specific constraints. The engine is based on the upstream [OptaPlanner](http://www.optaplanner.org) project.
 
 ### Process Management
-A high-performant, lightweight and scalable, BPMN2 compliant, process execution engine based on the open-source [jBPM](http://www.jbpm.org) project. Provides functionality like business process management, case management and human task management, to enable the automation and optimization of processes and cases.
+RHPAM includes a high-performant, lightweight and scalable, BPMN2 compliant, process execution engine (Kie Server), which is based on the open-source [jBPM](http://www.jbpm.org) project. Provides functionality like business process management and human task management, to enable the automation and optimization of processes.
 
-### Application management
-A modern workbench that provides user the tooling to build business automation projects consisting of processes, rules, cases, and forms. Also, the workbench provides the management and monitoring functionality to build, deploy, run, manage and monitor business automation and process driven applications.
+### Case management
+
+The [jBPM](http://www.jbpm.org) engine (Kie Server) is CMMN compliant, and with Business Central, you can author, execute, manage and monitor flexible processes, also called, cases. With this, you can align capabilities like milestones and case files in your cases and integrate your cases with other tradicional BPMN based processes.
+
+### Dashboards Reporting
+
+Red Hat PAM includes a powerfull Business Activity Monitoring (BAM) capability that allows users to build reports based on different data sources (CSV, SQL, Kie Server…), and show them using customized pages and components. 
+
+![High Level Capability Component]({% image_path high-level-capability-components-dashboard.png %}){:width="600px"}
 
 ---
 
 ## Architectural components
 
-In order to be able to correctly install and provision an RHPAM environment, you should first get familiar with the platform components. With the available components in mind you can understand the different possible ways to configure the product and be able to support different use cases.
+Let's get familiar with the platform components so that we can understand the different ways to configure the product and be able to support different use cases.
 
-On this Workshop, we are considering OCP as the installation platform. The OpenShift self-service console will allow you to provision, recreate, destroy your working environment and be autonomous from other users.
+In this scenario, we are considering OpenShift as the installation platform. The OpenShift self-service console will allow you to provision, recreate, destroy your working environment and be autonomous from other users.
 
 Red Hat PAM main components and capabilities are displayed in this diagram:
 
-![RHPAM 7 Componens]({% image_path rhpam-components.png %}){:width="600px"}
+![RHPAM 7 Components]({% image_path rhpam-components.png %}){:width="600px"}
 
 ### Business Central Monitoring
 A modern web-based workbench that provides user the tooling to manage and monitor deployed projects, running engines, running instances of process-driven applications and more.

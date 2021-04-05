@@ -1,4 +1,4 @@
-#  Business Central Security
+# 5. Accessing Business Central
 
 So far you received access to the OpenShift where your PAM environment is available. Now we will access PAM workbench known as Business Central.
 
@@ -12,12 +12,12 @@ Let's start by accessing your business central.
 
 _Jump to step 2 if you're already logged into OpenShift._
 
-1. [Go to your Openshift console](https://{{ OPENSHIFT_CONSOLE_URL }}){:target="_blank"} tab.  If you're not yet logged in, or have been logged out, login using the same credentials as before:
+1. [Go to your Openshift console]({{ OPENSHIFT_CONSOLE_URL }}){:target="_blank"} tab.  If you're not yet logged in, or have been logged out, login using the same credentials as before:
 
-- user: `userX`{{copy}}
-- password: `openshift`{{copy}}
+	- user: `userX`{{copy}}
+	- password: `openshift`{{copy}}
 
-![OpenShift Console]({% image_path openshift-console.png %}){:width="600px"}
+	![OpenShift Console]({% image_path openshift-console.png %}){:width="600px"}
 
 2. Make sure you are on the `Developer` perspective. On the left menu, select the `Topology` option and check if you have the `rhpam-userX` project selected. .
 
@@ -37,4 +37,4 @@ At this point we are interested on the authoring environment. From this page, yo
 
 If you can see the page above, this means you could access the working environment where users can author and test their Business Applications.
 
-Let's head over to have an overview about how user authentication and authorization works within Business Central.
+Let's head over to have an overview about how Red Hat PAM works on cloud CaaS environments like OpenShift.
